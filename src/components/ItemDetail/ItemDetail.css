@@ -1,0 +1,18 @@
+.ItemDetail {
+    display: flex;
+    flex-direction: column;
+    width: 1024px;
+    align-items: flex-start;
+    background-color: white;
+    padding: 32px;
+    margin: 0px
+}
+
+.ItemDetail__info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: space-between;
+    width: 1024px
+}
+

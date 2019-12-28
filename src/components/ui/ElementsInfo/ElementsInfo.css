@@ -1,0 +1,31 @@
+.ElementsInfo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 16px;
+    width: 480px
+}
+
+.ElementsInfo__productInfo {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+
+.ElementsInfo__productInfo__price {
+    font-size: 24px;
+    color: #333333;
+    margin-bottom: 32px
+}
+
+.ElementsInfo__productInfo__title {
+    font-size: 18px;
+    color: #666666
+}
+
+.ElementsInfo__state {
+    font-size:14px;
+    justify-content: flex-end;
+    padding-top: 24px;
+    color: #999999
+}

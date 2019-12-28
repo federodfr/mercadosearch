@@ -1,0 +1,6 @@
+.Routes__content{
+    background-color: #EEEEEE;
+    display: flex;
+    flex-direction: column;
+    align-items: center
+}

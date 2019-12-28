@@ -1,0 +1,10 @@
+.Categories{
+    width: 100%;
+    padding: 16px 0;
+
+}
+
+.Categories__text {
+    color: #999999;
+    font-size: 14px;
+}

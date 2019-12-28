@@ -1,0 +1,34 @@
+
+
+.ItemInfo {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+}
+
+.ItemInfo__header {
+    font-size: 14px;
+    margin-bottom: 16px;
+    color: #333333;
+}
+
+.ItemInfo__title {
+    font-size: 24px;
+    color: #333333;
+    font-weight: bold;
+}
+
+.ItemInfo__price {
+    font-size: 46px;
+    margin: 32px 0;
+    color: #333333;
+}
+
+.ItemInfo__Button {
+    background-color: #3483FA;
+    border: none;
+    border-radius: 4px;
+    height: 32px;
+    font-size: 14px;
+    color: #FFFFFF;
+}
