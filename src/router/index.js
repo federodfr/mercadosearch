@@ -3,7 +3,7 @@ import React from 'react';
 import { Route, Switch } from 'react-router-dom';
 import SearchBar from '../components/SearchBar';
 import Wrapper from '../components/Wrapper';
-import CONST from '../constants'
+import CONST from '../constants';
 
 import "./Routes.css";
 class Router extends React.Component {

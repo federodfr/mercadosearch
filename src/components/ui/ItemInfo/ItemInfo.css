@@ -3,7 +3,7 @@
 .ItemInfo {
     display: flex;
     flex-direction: column;
-    width: 200px;
+    width: 300px;
 }
 
 .ItemInfo__header {

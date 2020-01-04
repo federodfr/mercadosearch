@@ -22,18 +22,31 @@ function getItems(results){
 
 
   for (var i = 0; i < 4 ; i++) {
-    let result      = results.length && results[i],
-        id          = (result && result.id) || '',
-        title       = (result && result.title) || '',
-        price       = (result && result.price) || '',
-    //amount. decimals
-        picture     = (result && result.thumbnail) || '',
-        condition   = (result && result.condition) || '',
-        address     = (result && result.address) || '',
-        state_name  = (address && address.state_name) || '',
+    let result        = results.length && results[i],
+        id            = (result && result.id) || '',
+        title         = (result && result.title) || '',
+        price         = (result && result.price) || '',
+        currency      = (result && result.currency_id) || '',
+        picture       = (result && result.thumbnail) || '',
+        condition     = (result && result.condition) || '',
+        address       = (result && result.address) || '',
+        shipping      = (result && result.shipping) || {},
+        freeShipping  = (shipping && shipping.free_shipping) || false,
+        state_name    = (address && address.state_name) || '',
         parsedItem;
-    // free_shipping = 
-    parsedItem = {id, title, price, picture, condition, state_name};
+        
+    parsedItem = {
+      id,
+      title,
+      price: {
+        currency: currency,
+        amount: price,
+        decimals: '00',
+      },
+      picture,
+      condition,
+      freeShipping,
+      state_name};
 
     items.push(parsedItem)
   }

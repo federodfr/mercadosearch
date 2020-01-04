@@ -19,7 +19,7 @@ class ItemDetail extends React.Component {
         title         = (item && item.title) || '',
         price         = (item && item.price) || '',
         description   = (item && item.description) || '';
-      console.log(data)
+
     return (
       <div className='ItemDetail'>
         <div className='ItemDetail__info'>

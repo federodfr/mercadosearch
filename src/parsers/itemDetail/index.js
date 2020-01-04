@@ -4,14 +4,31 @@ async function getParsedDetail(dataServer){
       id            = (data && data.id) || '',
       title         = (data && data.title) || '',
       price         = (data && data.price) || '',
-      //object price
+      currency      = (data && data.currency_id) || '',
       picture       = (data && data.pictures && data.pictures[0]) || [],
       condition     = (data && data.condition) || '',
-      // freeShipping = results && results.freeShiping
+      shippings     = (data && data.shippings) || {},
+      freeShipping  = (shippings && shippings.free_shipping) || false,
       sold_quantity = (data && data.sold_quantity) || '',
       description   = (data && data.plain_text) || '',
       parsedData    = {
-        item: { id, title, price, picture, condition, sold_quantity, description}
+        author: {
+          name: 'Federico',
+          lastname: 'Rodriguez'
+        },
+        item: {
+          id,
+          title,
+          price: {
+            currency: currency,
+            amount: price,
+            decimals: '00',
+          },
+          picture,
+          condition,
+          sold_quantity,
+          freeShipping,
+          description}
       };
 
   return await parsedData
